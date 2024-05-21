@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@font-face {
+  font-family: "Nats";
+  src: url("fonts/NATS-Regular.ttf") format("truetype");
+}
+* {
+  @apply font-nats m-0 p-0 box-border leading-4;
+}
