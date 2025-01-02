@@ -13,11 +13,20 @@ export default {
         }
       },
       colors: {
-        deepPurple: "#CCA8E9",
-        lightPurple: "#C3BEF0",
+        primary: {
+          100: "#041F1B",
+          300: "#0C3C26",
+          400: "#041F1B",
+          600: "#01120D"
+        },
+        secondary: "#FF8A05",
         cakeBlue: "#CADEFC",
         cakeGreen: "#DEFCF9",
-        white: "#F9F9F9",
+        white: {
+          100: "#FFFFFF",
+          200: "#F3F3F5",
+          300: "#D3D1CB"
+        },
         red: "#D21E58",
         black: "#373737"
       },
