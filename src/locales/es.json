@@ -1,0 +1,8 @@
+{
+  "stepper": {
+    "buttons": {
+      "next": "Siguiente",
+      "back": "Atrás"
+    }
+  }
+}
