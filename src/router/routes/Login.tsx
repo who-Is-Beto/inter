@@ -5,7 +5,7 @@ const Login: FC = (): ReactNode => {
   return (
     <div>
       Login
-      <Link className="bg-deepPurple" to={"/"}>
+      <Link className="bg-primary" to={"/"}>
         login
       </Link>
     </div>

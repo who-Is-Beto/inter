@@ -1,5 +1,6 @@
 import { FC, Fragment, ReactNode } from "react";
 import useStep from "../../hooks/useSelectStep";
+import { useTranslation } from "react-i18next";
 
 declare type StepperProps = {
   views: Array<ReactNode>;
@@ -15,6 +16,7 @@ const Stepper: FC<StepperProps> = ({ views }): ReactNode => {
   } = useStep({
     viewsLenght: views.length
   });
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col gap-2 justify-center items-center">
@@ -37,7 +39,9 @@ const Stepper: FC<StepperProps> = ({ views }): ReactNode => {
         )}
       </div>
       {!showNextStepButton && (
-        <button onClick={() => setNextStep()}>NEXT</button>
+        <button onClick={() => setNextStep()}>
+          {t("stepper.buttons.next")}
+        </button>
       )}
     </div>
   );

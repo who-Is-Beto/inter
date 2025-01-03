@@ -9,8 +9,8 @@ const useStep = ({ viewsLenght }: UseStepProps) => {
 
   const activeStep = (index: number) => {
     return currentStep === index
-      ? "bg-deepPurple animate-[size-rebound_300ms_ease-in-out]"
-      : "bg-gray-300";
+      ? "bg-primary-300 animate-[size-rebound_300ms_ease-in-out]"
+      : "bg-white-300";
   };
 
   const handleStepChange = (index: number): void => {

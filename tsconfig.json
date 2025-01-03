@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "next-i18next.config.ts"],
   "alias": {
     "@": "./src"
   },
