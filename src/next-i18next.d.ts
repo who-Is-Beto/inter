@@ -5,7 +5,7 @@ import en from "./locales/en.json";
 type ES = typeof es;
 type EN = typeof en;
 
-declare module "react-i18next" {
+declare module "i18next" {
   interface CustomTypeOptions {
     defaultNS: "translation";
     resources: {

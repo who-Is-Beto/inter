@@ -39,7 +39,9 @@ const Stepper: FC<StepperProps> = ({ views }): ReactNode => {
         )}
       </div>
       {!showNextStepButton && (
-        <button onClick={() => setNextStep()}>{t("")}</button>
+        <button onClick={() => setNextStep()}>
+          {t("stepper.buttons.next")}
+        </button>
       )}
     </div>
   );
