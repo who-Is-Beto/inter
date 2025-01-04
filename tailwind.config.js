@@ -31,7 +31,8 @@ export default {
         black: "#373737"
       },
       fontFamily: {
-        nats: ["Nats", "sans-serif"]
+        nats: ["Nats", "sans-serif"],
+        nighty: ["Nighty", "sans-serif"]
       }
     }
   },
