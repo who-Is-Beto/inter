@@ -1,6 +1,11 @@
 const View1 = (
   <div className="w-full flex justify-center items-center bg-gray-200">
-    <h1 className="text-4xl font-bold"></h1>
+    <h1 className="text-4xl font-bold font-nighty">
+      TEST Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      autem nulla magni distinctio. Cupiditate, molestiae hic! Quidem autem id
+      fuga officia eveniet alias eos, cum esse quibusdam reiciendis aspernatur
+      totam!
+    </h1>
   </div>
 );
 
