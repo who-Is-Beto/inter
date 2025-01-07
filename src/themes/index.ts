@@ -1,6 +1,6 @@
 // 1. Import `extendTheme`
 
-import { createSystem, defaultSystem, defineConfig } from "@chakra-ui/react";
+import { createSystem, defineConfig } from "@chakra-ui/react";
 
 // 2. Call `extendTheme` and pass your custom values
 const config = defineConfig({

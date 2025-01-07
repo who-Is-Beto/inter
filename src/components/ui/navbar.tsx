@@ -15,7 +15,7 @@ const Navbar: FC = (): ReactNode => {
       left={"calc(50% - 80% / 2)"}
       p={"1rem"}
     >
-      <Link color={"green"} href="/">
+      <Link color={"brand.green"} href="/">
         Home
       </Link>
       <Link href="/tienda">tienda</Link>
