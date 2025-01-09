@@ -9,6 +9,9 @@ const config = defineConfig({
       colors: {
         green: {
           value: "#ACF510"
+        },
+        black: {
+          value: "#000"
         }
       }
     },
@@ -16,6 +19,9 @@ const config = defineConfig({
       colors: {
         "brand.green": {
           value: "{colors.green}"
+        },
+        "brand.black": {
+          value: "{colors.black}"
         }
       }
     }
