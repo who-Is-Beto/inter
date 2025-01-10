@@ -4,7 +4,7 @@ import { FC, ReactNode } from "react";
 const Navbar: FC = (): ReactNode => {
   return (
     <Flex
-      backgroundColor="brandGreen.100"
+      backgroundColor="brandGreen.300"
       as={"nav"}
       position={"absolute"}
       justifyContent={"space-evenly"}

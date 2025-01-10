@@ -1,9 +1,14 @@
 // 1. Import `extendTheme`
 
-import { createSystem, defineConfig } from "@chakra-ui/react";
+import {
+  createSystem,
+  defaultConfig,
+  defineConfig,
+  mergeConfigs
+} from "@chakra-ui/react";
 
 // 2. Call `extendTheme` and pass your custom values
-const config = defineConfig({
+const theme = defineConfig({
   theme: {
     tokens: {
       colors: {
@@ -18,6 +23,6 @@ const config = defineConfig({
   }
 });
 
-const theme = createSystem(config);
-
-export default theme;
+const config = mergeConfigs(defaultConfig, theme);
+const system = createSystem(config);
+export default system;
