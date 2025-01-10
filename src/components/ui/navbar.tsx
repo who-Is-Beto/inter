@@ -4,16 +4,15 @@ import { FC, ReactNode } from "react";
 const Navbar: FC = (): ReactNode => {
   return (
     <Flex
-      bg={"brand.white"}
+      backgroundColor="brandGreen.100"
       as={"nav"}
-      pos={"relative"}
       position={"absolute"}
       justifyContent={"space-evenly"}
       bottom={"2rem"}
-      w={"80%"}
-      mx={"auto"}
+      width={"80%"}
+      margin={"0 auto"}
       left={"calc(50% - 80% / 2)"}
-      p={"1rem"}
+      padding={"1rem"}
     >
       <Link color={"brand.green"} href="/">
         Home

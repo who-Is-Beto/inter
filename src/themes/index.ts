@@ -7,21 +7,11 @@ const config = defineConfig({
   theme: {
     tokens: {
       colors: {
-        green: {
-          value: "#ACF510"
-        },
-        black: {
-          value: "#000"
-        }
-      }
-    },
-    semanticTokens: {
-      colors: {
-        "brand.green": {
-          value: "{colors.green}"
-        },
-        "brand.black": {
-          value: "{colors.black}"
+        brandGreen: {
+          DEFAULT: { value: "#ABF510" },
+          100: { value: "#96D90E" },
+          200: { value: "#87BE0C" },
+          300: { value: "#73A608" }
         }
       }
     }
