@@ -1,19 +1,20 @@
 import { Flex, Link } from "@chakra-ui/react";
-import { FC, ReactNode } from "react";
+import * as React from "react";
 
-const Navbar: FC = (): ReactNode => {
+const Navbar = React.forwardRef<HTMLDivElement>(function Navbar(_, ref) {
   return (
     <Flex
-      bg={"brand.white"}
+      gridArea={"navbar"}
+      backgroundColor="brandGreen.300"
       as={"nav"}
-      pos={"relative"}
-      position={"absolute"}
+      position={{ base: "absolute", mdToLg: "static" }}
       justifyContent={"space-evenly"}
       bottom={"2rem"}
-      w={"80%"}
-      mx={"auto"}
+      width={{ base: "80%", md: "100%" }}
+      margin={"0 auto"}
       left={"calc(50% - 80% / 2)"}
-      p={"1rem"}
+      padding={"1rem"}
+      ref={ref}
     >
       <Link color={"brand.green"} href="/">
         Home
@@ -22,6 +23,6 @@ const Navbar: FC = (): ReactNode => {
       <Link href="/config">config</Link>
     </Flex>
   );
-};
+});
 
 export default Navbar;
