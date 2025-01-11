@@ -17,7 +17,31 @@ const theme = defineConfig({
           100: { value: "#96D90E" },
           200: { value: "#87BE0C" },
           300: { value: "#73A608" }
+        },
+        brandBlue: {
+          DEFAULT: { value: "#115FF2" },
+          100: { value: "#E6EEFE" }
+        },
+        brandBlack: {
+          DEFAULT: { value: "#000000" },
+          100: { value: "#414045" },
+          200: { value: "#EDF0EF" },
+          300: { value: "#F3F6F6" }
+        },
+        brandWhite: {
+          DEFAULT: { value: "#FFFFFF" }
         }
+      }
+    },
+    textStyles: {
+      body: {
+        fontFamily: "Nats sans-serif"
+      }
+    },
+    layerStyles: {
+      base: {
+        backgroundColor: "brandWhite",
+        color: "brandBlack.100"
       }
     }
   }
