@@ -1,12 +1,7 @@
-import Navbar from "@/components/ui/navbar";
 import { FC, ReactNode } from "react";
 
 const Home: FC = (): ReactNode => {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <>Home</>;
 };
 
 export default Home;
