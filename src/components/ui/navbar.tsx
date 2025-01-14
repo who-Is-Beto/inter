@@ -17,8 +17,12 @@ const NavBarIcon = React.forwardRef<
 
   return (
     <Link
-      bg={isActive ? "brandWhite" : ""}
-      color={isActive ? "brandBlack" : ""}
+      color={isActive ? "brandWhite" : "brandBlack.200"}
+      transitionDuration={"5000ms"}
+      scale={isActive ? "1.3" : "1"}
+      fontWeight={isActive ? "bold" : "normal"}
+      padding={"0.5rem"}
+      outline={"none"}
       as={"a"}
       href={to}
       ref={ref}
@@ -44,7 +48,6 @@ const Navbar = React.forwardRef<HTMLDivElement>(function Navbar(_, ref) {
       padding={"1rem"}
       fontSize={"1.5rem"}
       ref={ref}
-      color={"brandWhite"}
     >
       <NavBarIcon to={Routes.home}>
         <FaHouseChimney />
