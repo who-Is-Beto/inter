@@ -25,8 +25,9 @@ const theme = defineConfig({
         brandBlack: {
           DEFAULT: { value: '#000000' },
           100: { value: '#414045' },
-          200: { value: '#EDF0EF' },
-          300: { value: '#F3F6F6' },
+          200: { value: '#a9a7ae' },
+          300: { value: '#EDF0EF' },
+          400: { value: '#F3F6F6' },
         },
         brandWhite: {
           DEFAULT: { value: '#FFFFFF' },
