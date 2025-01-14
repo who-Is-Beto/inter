@@ -3,6 +3,30 @@ import * as React from "react";
 import { FaHouseChimney } from "react-icons/fa6";
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
+import { IoSettingsSharp } from "react-icons/io5";
+import { useLocation } from "react-router-dom";
+import { Routes } from "@/constants";
+
+const NavBarIcon = React.forwardRef<
+  HTMLAnchorElement,
+  { children: React.ReactNode; to: string }
+>(function NavBarIcon({ children, to }, ref) {
+  const { pathname } = useLocation();
+
+  const isActive = pathname === to;
+
+  return (
+    <Link
+      bg={isActive ? "brandWhite" : ""}
+      color={isActive ? "brandBlack" : ""}
+      as={"a"}
+      href={to}
+      ref={ref}
+    >
+      {children}
+    </Link>
+  );
+});
 
 const Navbar = React.forwardRef<HTMLDivElement>(function Navbar(_, ref) {
   return (
@@ -13,24 +37,27 @@ const Navbar = React.forwardRef<HTMLDivElement>(function Navbar(_, ref) {
       borderRadius={"1rem"}
       position={{ base: "absolute", mdToLg: "static" }}
       justifyContent={"space-evenly"}
-      bottom={"2rem"}
-      width={{ base: "80%", md: "100%" }}
+      bottom={"1rem"}
+      width={{ base: "85%", md: "100%" }}
       margin={"0 auto"}
-      left={"calc(50% - 80% / 2)"}
+      left={"calc(50% - 85% / 2)"}
       padding={"1rem"}
+      fontSize={"1.5rem"}
       ref={ref}
       color={"brandWhite"}
     >
-      <Link href="/">
+      <NavBarIcon to={Routes.home}>
         <FaHouseChimney />
-      </Link>
-      <Link href="/dashboard">
+      </NavBarIcon>
+      <NavBarIcon to={Routes.dashboard}>
         <MdSpaceDashboard />
-      </Link>
-      <Link href="/tienda">
+      </NavBarIcon>
+      <NavBarIcon to={Routes.tienda}>
         <FaShoppingBag />
-      </Link>
-      <Link href="/config">config</Link>
+      </NavBarIcon>
+      <NavBarIcon to={Routes.config}>
+        <IoSettingsSharp />
+      </NavBarIcon>
     </Flex>
   );
 });
