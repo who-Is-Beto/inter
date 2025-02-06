@@ -33,10 +33,9 @@ const theme = defineConfig({
           DEFAULT: { value: '#FFFFFF' },
         },
       },
-    },
-    textStyles: {
-      body: {
-        fontFamily: 'Nats sans-serif',
+      fonts: {
+        Nats: { value: 'NATS' },
+        Nighty: { value: 'Nighty' },
       },
     },
     layerStyles: {
