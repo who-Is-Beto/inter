@@ -2,15 +2,15 @@ import {
   Outlet,
   Route,
   createBrowserRouter,
-  createRoutesFromElements
-} from "react-router-dom";
-import Login from "./routes/Login";
-import Home from "./routes/Home";
-import ProtectedRoute from "@/components/protectedRoute";
-import { Routes } from "@/constants";
-import Dashboard from "./routes/Dashboard";
-import Tienda from "./routes/Tienda";
-import Config from "./routes/Config";
+  createRoutesFromElements,
+} from 'react-router-dom';
+import Login from './routes/Login';
+import Home from './routes/Home';
+import ProtectedRoute from '@/components/protectedRoute';
+import { Routes } from '@/constants';
+import Dashboard from './routes/Dashboard';
+import Tienda from './routes/Tienda';
+import Config from './routes/Config';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,8 +23,8 @@ const router = createBrowserRouter(
         <Route path={Routes.config} element={<Config />} />
       </Route>
       {/* <Route path="register" element={<Register />} /> */}
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 export default router;

@@ -4,5 +4,23 @@
       "next": "Siguiente",
       "back": "Atrás"
     }
+  },
+  "forms": {
+    "login": {
+      "message": "Ingresar",
+      "username": {
+        "label": "Nombre de usuario o Correo",
+        "placeholder": "Ingresar nombre de usuario o correo"
+      },
+      "password": {
+        "label": "Contraseña",
+        "placeholder": "Ingresa tu contraseña"
+      },
+      "account": {
+        "message": "¿No tienes una cuenta?",
+        "link": "Crea una cuenta"
+      },
+      "Submit": "Entrar"
+    }
   }
 }
