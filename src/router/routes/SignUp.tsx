@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, Fieldset, Flex, Input, Link, Text } from '@chakra-ui/react';
+import { Box, Fieldset, Flex, Input, Text, Link } from '@chakra-ui/react';
 import { Field } from '@/components/ui/field';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 
-const Login = React.forwardRef<HTMLDivElement>(function Login(_, ref) {
+const SignUp = React.forwardRef<HTMLDivElement>(function SignUp(_, ref) {
   const { t } = useTranslation();
   return (
     <Box
@@ -25,7 +25,7 @@ const Login = React.forwardRef<HTMLDivElement>(function Login(_, ref) {
             fontFamily="Nighty"
             textAlign="center"
           >
-            {t('forms.login.message')}
+            {t('forms.signUp.message')}
           </Fieldset.Legend>
         </Flex>
         <form
@@ -35,25 +35,38 @@ const Login = React.forwardRef<HTMLDivElement>(function Login(_, ref) {
             console.log('event', event);
           }}
         >
-          <Field label={t('forms.login.username.label')} errorText="Required">
-            <Input placeholder={t('forms.login.username.placeholder')} />
+          <Field label={t('forms.signUp.Username.label')} errorText="Required">
+            <Input placeholder={t('forms.signUp.Username.placeholder')} />
           </Field>
-          <Field label={t('forms.login.password.label')} errorText="Required">
+          <Field label={t('forms.signUp.Email.label')} errorText="Required">
+            <Input name="" placeholder={t('forms.signUp.Email.placeholder')} />
+          </Field>
+          <Field label={t('forms.signUp.Password.label')} errorText="Required">
             <Input
               name=""
-              placeholder={t('forms.login.password.placeholder')}
+              placeholder={t('forms.signUp.Password.placeholder')}
             />
           </Field>
+          <Field
+            label={t('forms.signUp.ConfirmPassword.label')}
+            errorText="Required"
+          >
+            <Input
+              name=""
+              placeholder={t('forms.signUp.ConfirmPassword.placeholder')}
+            />
+          </Field>
+
           <Text as="small" textStyle="xs">
-            {t('forms.login.account.message')}
+            {t('forms.signUp.account.message')}
             {'  '}
             <Link
-              href="/signup"
+              href="/login"
               variant="underline"
               color="brandGreen.200"
               textStyle="xs"
             >
-              {t('forms.login.account.link')}
+              {t('forms.signUp.account.link')}
             </Link>
           </Text>
           <Button
@@ -63,7 +76,7 @@ const Login = React.forwardRef<HTMLDivElement>(function Login(_, ref) {
             color="brandWhite"
             _active={{ transform: 'scale(0.8)' }}
           >
-            {t('forms.Submit.enter')}
+            {t('forms.Submit.create')}
           </Button>
         </form>
       </Fieldset.Root>
@@ -71,4 +84,4 @@ const Login = React.forwardRef<HTMLDivElement>(function Login(_, ref) {
   );
 });
 
-export default Login;
+export default SignUp;

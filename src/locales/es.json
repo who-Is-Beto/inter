@@ -6,6 +6,10 @@
     }
   },
   "forms": {
+    "Submit": {
+      "enter": "Entrar",
+      "create": "Crear"
+    },
     "login": {
       "message": "Ingresar",
       "username": {
@@ -19,8 +23,30 @@
       "account": {
         "message": "¿No tienes una cuenta?",
         "link": "Crea una cuenta"
+      }
+    },
+    "signUp": {
+      "message": "Regístrate",
+      "Username": {
+        "label": "Nombre de usuario",
+        "placeholder": "Agrega un nombre de usuario"
       },
-      "Submit": "Entrar"
+      "Email": {
+        "label": "Email",
+        "placeholder": "Tu Email"
+      },
+      "Password": {
+        "label": "Contraseña",
+        "placeholder": "Sólo una contraseña segura"
+      },
+      "ConfirmPassword": {
+        "label": "Confirma tu contraseña",
+        "placeholder": "La misma qué arriba"
+      },
+      "account": {
+        "message": "¿Ya tienes una cuenta?",
+        "link": "Ingresa"
+      }
     }
   }
 }

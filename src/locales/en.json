@@ -6,6 +6,10 @@
     }
   },
   "forms": {
+    "Submit": {
+      "enter": "Submit",
+      "create": "Create"
+    },
     "login": {
       "message": "Login",
       "username": {
@@ -17,10 +21,32 @@
         "placeholder": "Enter your password"
       },
       "account": {
-        "message": "Don't you have an account?",
+        "message": "You don't have an account?",
         "link": "Create an account"
-      },
-      "Submit": "Submit"
+      }
+    }
+  },
+  "signUp": {
+    "message": "Sign Up",
+    "Username": {
+      "label": "Username",
+      "placeholder": "Enter an Username"
+    },
+    "Email": {
+      "label": "Email",
+      "placeholder": "Your Email"
+    },
+    "Password": {
+      "label": "Password",
+      "placeholder": "Just a secure password"
+    },
+    "ConfirmPassword": {
+      "label": "Confirm your password",
+      "placeholder": "The same password as above"
+    },
+    "account": {
+      "message": "Do you already have an account?",
+      "link": "Login"
     }
   }
 }
