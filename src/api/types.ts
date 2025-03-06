@@ -9,3 +9,9 @@ export type User = {
   createdOn: string;
   createdBy: string;
 };
+
+export const DEFAULT_FETCH_OPTIONS = {
+  headers: {
+    'Content-Type': 'application/json',
+  },
+};

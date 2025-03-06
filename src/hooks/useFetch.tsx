@@ -1,3 +1,4 @@
+import { DEFAULT_FETCH_OPTIONS } from '@/api/types';
 import { useState } from 'react';
 
 type UseFetchProps = {
